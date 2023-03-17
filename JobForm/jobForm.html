@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <label for="name">Name*</label><br />
+      <input type="text" id="name" required /><br /><br />
+
+      <label for="email">Email*</label><br />
+      <input type="email" id="email" required /><br /><br />
+
+      <fieldset>
+        <legend>Gender*</legend>
+
+        <div>
+          <input type="radio" id="male" name="gender" required />
+          <label for="male">Male</label><br />
+
+          <input type="radio" id="female" name="gender" required />
+          <label for="Female">Female</label><br />
+
+          <input type="radio" id="other" name="gender" required />
+          <label for="other">Other</label><br />
+        </div>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Laptop</legend>
+
+        <div>
+          <input type="checkbox" id="laptop" name="Apple" />
+          <label for="Apple">Apple</label><br />
+
+          <input type="checkbox" id="laptop" name="Asus" />
+          <label for="Asus">Asus</label><br />
+
+          <input type="checkbox" id="laptop" name="HP" />
+          <label for="HP">HP</label><br />
+        </div>
+      </fieldset>
+      <br />
+      <label for="age">Age*</label><br />
+      <input type="number" id="age" name="age" min="18" max="100" required />
+      <br /><br />
+      <label for="dob">Dob*</label><br />
+      <input type="date" id="dob" required />
+      <br /><br />
+      <label for="password">Password*</label><br />
+      <input type="password" id="password" required />
+      <br /><br />
+      <label for="url">Portfolio URL:</label><br />
+      <input
+        type="url"
+        name="url"
+        id="protfolio"
+        placeholder="https://example.com"
+        pattern="https://.*"
+        size="30"
+        required
+      /><br /><br />
+      <button>SUBMIT</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Barber Shop Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="banner">
+      <img src="logo.png" class="logo" />
+      <div class="banner-text">
+        <h1>Hair Studio</h1>
+        <p>Style Your Hair Is Style Your Life</p>
+        <div class="banner-btn">
+          <a href="#"><span></span> Find Out</a>
+          <a href="#"><span></span> Read More</a>
+        </div>
+      </div>
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">TESTIMONIALS</a></li>
+          <li><a href="#">MEET US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menu_btn"><img src="menu.png" id="menu" /></div>
+
+    <!-- Feature -->
+
+    <section id="feature">
+      <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Why Choose Us</h1>
+      </div>
+      <div class="feature-box">
+        <div class="features">
+            <h1>Experienced Staff</h1>
+        </div>
+      </div>
+    </section>
+    <script>
+      var menu_btn = document.getElementById("menu_btn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+      menu_btn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "close.png";
+        } else {
+          sideNav.style.right = "-250px";
+          menu.src = "menu.png";
+        }
+      };
+    </script>
+  </body>
+</html>

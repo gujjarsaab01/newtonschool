@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(231, 238, 236);
+    
+
+}
+.main-content{
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+}
+
+
+.left-section{
+    grid-column: span 1;
+    background-color: crimson;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #aaa
+    
+}
